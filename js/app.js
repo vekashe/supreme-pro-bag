@@ -31,6 +31,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+
+        // Gallery Swiper
+        const gallerySwiper = document.querySelector('.gallery-swiper');
+        
+        if (gallerySwiper) {
+            new Swiper(gallerySwiper, {
+                direction: 'horizontal',
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        }
     };
 
     initSwipers();
