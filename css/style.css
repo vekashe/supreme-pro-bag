@@ -419,6 +419,12 @@ img {
     color: var(--color-text);
     position: relative;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-card > a {
+    align-self: center;
 }
 
 .collection-card:hover {
@@ -1089,6 +1095,7 @@ img {
     margin-top: 60px;
 }
 
+
 .promo-banner {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -1096,18 +1103,33 @@ img {
     display: flex;
     position: relative;
     overflow: hidden;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 60vw;
 }
 
-.promo-banner>img {
-    width: 30%;
+.promo-banner__img {
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transform: translate(83%, -40%);
+    width: 150%;
+    aspect-ratio: 1/1;
+    background-color: #e05252;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.promo-banner__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .promo-banner__content {
     position: relative;
     z-index: 2;
-    max-width: 90%;
+    width: 100%;
     padding: 40px;
 }
 
@@ -1322,7 +1344,7 @@ select.form-control {
 
 /* --- Inline Styles Replacement --- */
 .bg-about-header {
-    background-image: url('../assets/img/about-us/Rectangle%207.png');
+    background-image: url('../assets/img/new/about\ banner\ image.png');
 }
 
 .bg-video-section {
@@ -1525,6 +1547,20 @@ select.form-control {
         grid-template-columns: 1fr 1fr;
     }
 
+    .promo-banner {
+        padding-bottom: 0;
+    }
+
+    .promo-banner__img {
+        top: 100%;
+        left: 100%;
+        transform: translate(-25%, -75%);
+    }
+
+    .promo-banner__img img {
+        object-position: right center;
+    }
+
     .promo-banner__content {
         max-width: 60%;
     }
@@ -1558,20 +1594,6 @@ select.form-control {
     .contact-layout {
         grid-template-columns: 1fr 1fr;
         align-items: start;
-    }
-
-    .promo-banner:nth-child(1) {
-        background-size: auto 100%;
-        background-position: 120% center;
-        background-repeat: no-repeat;
-        background-image: url('../assets/img/new/Frame\ 1597882199.png');
-    }
-
-    .promo-banner:nth-child(2) {
-        background-size: auto 100%;
-        background-position: 120% center;
-        background-repeat: no-repeat;
-        background-image: url('../assets/img/new/Frame\ 1597882201.png');
     }
 
     .page-header__title {
