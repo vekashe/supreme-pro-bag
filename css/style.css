@@ -1430,6 +1430,10 @@ select.form-control {
         font-size: 1rem;
     }
 
+    .nav__list_mb {
+        display: none;
+    }
+
     .header__btn {
         display: inline-flex;
     }
