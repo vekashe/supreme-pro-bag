@@ -687,7 +687,7 @@ img {
     color: var(--color-white);
     padding: 100px 0;
     background-image: url('../assets/img/new/Mobile\ view\ contact\ footer\ banner.png');
-    background-color: #0003;
+    background-color: #0006;
     background-blend-mode: color;
 }
 
@@ -1104,7 +1104,7 @@ img {
     position: relative;
     overflow: hidden;
     flex-wrap: wrap;
-    padding-bottom: 60vw;
+    /* padding-bottom: 60vw; */
 }
 
 .promo-banner__img {
@@ -1577,9 +1577,9 @@ select.form-control {
         object-position: right center;
     }
 
-    .promo-banner__content {
+    /* .promo-banner__content {
         max-width: 60%;
-    }
+    } */
 
     /* Product Detail Page Queries */
     .product-detail__grid {
