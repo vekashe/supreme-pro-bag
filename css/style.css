@@ -686,7 +686,7 @@ img {
     background-position: center;
     color: var(--color-white);
     padding: 100px 0;
-    background-image: url('../assets/img/new/banner\ image.png');
+    background-image: url('../assets/img/new/Mobile\ view\ contact\ footer\ banner.png');
     background-color: #0003;
     background-blend-mode: color;
 }
@@ -1519,6 +1519,10 @@ select.form-control {
 @media (min-width: 992px) {
     .hero__title {
         font-size: 4rem;
+    }
+
+    .cta {
+        background-image: url('../assets/img/new/banner\ image.png');
     }
 
     .collections__grid {
